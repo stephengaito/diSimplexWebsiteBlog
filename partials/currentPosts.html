@@ -1,0 +1,22 @@
+---
+layout: null
+title: Some Random Notes
+maxPosts: 10
+---
+
+  <h3>Recent Blog Posts</h3>
+
+  <table>
+    <tbody>
+{% for post in page.nPosts %}
+      <tr>
+        <td style="vertical-align:top;width:10em; border-top: 2px solid #AAAAAA">{{ post.date | date_to_string }} &raquo; </td>
+        <td>
+          <div style="border-bottom: 1px solid #AAAAAA; border-top: 2px solid #AAAAAA"><a href="/blog{{ post.url }}">{{ post.title }}</a></div>
+          <div class="content">{{ post.excerpt }}</div>
+        </td>
+      </tr>
+{% endfor %}
+    </tbody>
+  </table>
+

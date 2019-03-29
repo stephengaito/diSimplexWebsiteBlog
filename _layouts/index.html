@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h2>{% for crumb in page.breadCrumbs %}
+  / <a href="/blog{{crumb[1]}}">{{crumb[0]}}</a>
+{% endfor %}</h2>
+<div class="index">
+<p>
+  <ul>
+  {% for item in page.pageIndex %}
+    <li><a href="/blog{{item[1]}}">{{item[0]}}</a></li>
+  {% endfor %}
+  </ul>
+</p>
+</div>
+

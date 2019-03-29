@@ -1,0 +1,15 @@
+---
+layout: default
+title: Some Random Notes
+---
+
+<div id="home">
+{% for page in page.pageIndex %}
+  <a href="/blog{{page[1]}}">{{page[0]}}</a>
+{% endfor %}
+
+<hr/>
+
+  <!--#include file="/blog/partials/currentPosts.html" -->
+</div>
+

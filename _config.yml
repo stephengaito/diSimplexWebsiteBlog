@@ -1,0 +1,2 @@
+subSiteDir: blog
+permalink: /:year/:month/:day-:title.html
